@@ -61,7 +61,11 @@ video
   height: 100vh;
   object-fit: cover;
 }
-
+/*
+video::-webkit-media-controls {
+  display: none;
+}
+*/
 .content
 {
   position: absolute;

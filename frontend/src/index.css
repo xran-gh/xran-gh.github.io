@@ -37,12 +37,12 @@ header nav a
 {
   color: white;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: calc(1.5vw + 1.5vh);
 }
 
 header nav a.active
 {
-  border-bottom: 0.3vw solid;
+  border-bottom: calc(0.15vw + 0.15vh) solid red;
 }
 
 /* main page */
@@ -61,11 +61,7 @@ video
   height: 100vh;
   object-fit: cover;
 }
-/*
-video::-webkit-media-controls {
-  display: none;
-}
-*/
+
 .content
 {
   position: absolute;

@@ -1,5 +1,5 @@
 import React from 'react'
-import video from '../../assets/error.mp4'
+import video from '../../assets/errorbackground.mp4'
 
 const NotFound = () =>
 {

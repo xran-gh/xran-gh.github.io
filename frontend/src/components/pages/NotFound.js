@@ -5,11 +5,13 @@ const NotFound = () =>
 {
   return (
     <div className='NotFound'>
-			<video src={video} autoPlay loop muted playsInline/>
       <div className="content">
-        <div className="code">404</div>
-        <div className="title">Error</div>
-        <div className="subtitle">Page Not Found</div>
+        <video src={video} autoPlay loop muted playsInline/>
+        <div className='center'>
+          <div className="code">404</div>
+          <div className="title">Error</div>
+          <div className="subtitle">Page Not Found</div>
+        </div>
       </div>
     </div>
   )

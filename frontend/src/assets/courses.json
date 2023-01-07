@@ -1,0 +1,14 @@
+{
+    "courses":
+    [
+        {
+            "path": "ststems-softwares",
+            "title": "Systems Software"
+        },
+
+        {
+            "path": "computer-science-one",
+            "title": "Computer Science One"
+        }
+    ]
+}

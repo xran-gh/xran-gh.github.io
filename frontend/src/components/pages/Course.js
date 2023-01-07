@@ -1,9 +1,21 @@
 import React from 'react'
+import CourseList from '../../assets/courses.json'
 
 const Course = () =>
 {
+  const courses = CourseList;
+
   return (
-    <div>Course</div>
+    <div className='Course'>
+      {
+        courses.courses.map(course =>
+        (
+          <p key={course.path}>
+            {course.title}
+          </p>
+        ))
+      }
+    </div>
   )
 }
 

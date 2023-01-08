@@ -1,6 +1,8 @@
 import React from 'react'
 import video from '../../assets/mainbackground.mp4'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import {Link} from 'react-scroll';
+import Button from "@mui/material/Button";
 
 const Main = () =>
 {
@@ -14,17 +16,21 @@ const Main = () =>
           <div className="subtitle">Software Engineer</div>
         </div>
         <div className='expand'>
-          <ExpandMoreIcon className='icon' fontSize='inherit'/>
+          <Link to="AboutCard" smooth={true} duration={1000}>
+            <Button disableRipple style={{backgroundColor:'transparent'}}>
+              <ExpandMoreIcon className='icon' />
+            </Button>
+          </Link>
         </div>
       </div>
       <div className='AboutCard'>
-        My Journey
+        About My Journey So Far
       </div>
       <div className='CoursesCard'>
-        Programming Courses
+        Programming Course Summary And Homework
       </div>
       <div className='ProjectCard'>
-        Project Ideas
+        Current Projects And Future Ideas
       </div>
     </div>
   )

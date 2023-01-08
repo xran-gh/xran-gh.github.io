@@ -32,7 +32,7 @@ const RootLayout = () =>
           />
           <NavLink className={'nav-link'} to="course">
             <SchoolIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
-            Course
+            Courses
           </NavLink>
           <Divider
             orientation='vertical'
@@ -41,7 +41,7 @@ const RootLayout = () =>
           />
           <NavLink className={'nav-link'} to="project">
             <LightbulbIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
-            Project
+            Projects
           </NavLink>
         </nav>
       </header>

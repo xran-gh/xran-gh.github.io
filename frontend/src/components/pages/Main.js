@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 const Main = () =>
 {
   return (
-    <div className='Main'>      
+    <div className='Main'>
       <div className="content">
         <video src={video} autoPlay loop muted playsInline/>
         <div className='center'>
@@ -24,13 +24,28 @@ const Main = () =>
         </div>
       </div>
       <div className='AboutCard'>
-        About My Journey So Far
+        <div className='top'>
+          About My Journey So Far
+        </div>
+        <div className='center'>
+          body body body body body body
+        </div>
       </div>
       <div className='CoursesCard'>
-        Programming Course Summary And Homework
+        <div className='top'>
+          Programming Course Summary And Homework
+        </div>
+        <div className='center'>
+          body body body body body body
+        </div>
       </div>
       <div className='ProjectCard'>
-        Current Projects And Future Ideas
+        <div className='top'>
+          Current Projects And Future Ideas
+        </div>
+        <div className='center'>
+          body body body body body body
+        </div>
       </div>
     </div>
   )

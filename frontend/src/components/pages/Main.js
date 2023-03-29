@@ -3,6 +3,9 @@ import video from '../../assets/mainbackground.mp4'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import {Link} from 'react-scroll';
 import Button from "@mui/material/Button";
+import PersonIcon from '@mui/icons-material/Person'
+import SchoolIcon from '@mui/icons-material/School'
+import LightbulbIcon from '@mui/icons-material/Lightbulb'
 
 const Main = () =>
 {
@@ -25,7 +28,8 @@ const Main = () =>
       </div>
       <div className='AboutCard'>
         <div className='top'>
-          About My Journey So Far
+          <PersonIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
+          About Me
         </div>
         <div className='center'>
           body body body body body body
@@ -33,7 +37,8 @@ const Main = () =>
       </div>
       <div className='CoursesCard'>
         <div className='top'>
-          Programming Course Summary And Homework
+          <SchoolIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
+          Programming Courses
         </div>
         <div className='center'>
           body body body body body body
@@ -41,7 +46,8 @@ const Main = () =>
       </div>
       <div className='ProjectCard'>
         <div className='top'>
-          Current Projects And Future Ideas
+          <LightbulbIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
+          Projects And Ideas
         </div>
         <div className='center'>
           body body body body body body

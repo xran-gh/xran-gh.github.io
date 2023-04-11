@@ -39,6 +39,7 @@ header nav a
   color: white;
   text-decoration: none;
   font-size: calc(1.5vw + 1.5vh);
+  padding-bottom: 5px;
 }
 
 header nav a.active

@@ -32,7 +32,7 @@ const Main = () =>
           About Me
         </div>
         <div className='center'>
-          body body body body body body
+          section under work
         </div>
       </div>
       <div className='CoursesCard'>
@@ -41,7 +41,7 @@ const Main = () =>
           Programming Courses
         </div>
         <div className='center'>
-          body body body body body body
+          section under work
         </div>
       </div>
       <div className='ProjectCard'>
@@ -50,7 +50,7 @@ const Main = () =>
           Projects And Ideas
         </div>
         <div className='center'>
-          body body body body body body
+          section under work
         </div>
       </div>
     </div>

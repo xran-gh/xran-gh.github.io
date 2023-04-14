@@ -46,6 +46,22 @@ header nav a.active
   border-bottom: calc(0.15vw + 0.15vh) solid red;
 }
 
+.navNotInView
+{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.navInView
+{
+  opacity: 1;
+}
+
+.animateNav
+{
+  animation-duration: 1s;
+}
+
 /* ------------------------------------------------------------ main page ------------------------------------------------------------ */
 .Main
 {

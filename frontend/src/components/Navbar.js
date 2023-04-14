@@ -5,13 +5,16 @@ import HomeIcon from '@mui/icons-material/Home'
 import PersonIcon from '@mui/icons-material/Person'
 import SchoolIcon from '@mui/icons-material/School'
 import LightbulbIcon from '@mui/icons-material/Lightbulb'
+import { useInView } from 'react-intersection-observer';
 
 const RootLayout = () =>
 {
+  const { ref, inView } = useInView();
+
   return (
     <div className='root-layout'>
       <header>
-        <nav>
+        <nav ref={ref} className={inView ? 'navInView' : 'navNotInView'}>
           <NavLink className={'nav-link'} to="/">
             <HomeIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
             Home

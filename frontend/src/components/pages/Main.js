@@ -10,11 +10,11 @@ import { useInView } from 'react-intersection-observer';
 
 const Main = () =>
 {
-  const { ref: titleRef, inView: titleInView } = useInView({threshold: 1});
-  const { ref: subtitleRef, inView: subtitleInView } = useInView({threshold: 1});
-  const { ref: aboutRef, inView: aboutInView } = useInView({threshold: 0.2});
-  const { ref: courseRef, inView: courseInView } = useInView({threshold: 0.2});
-  const { ref: projectRef, inView: projectInView } = useInView({threshold: 0.2});
+  const { ref: titleRef, inView: titleInView } = useInView({threshold: 0.9});
+  const { ref: subtitleRef, inView: subtitleInView } = useInView({threshold: 0.9});
+  const { ref: aboutRef, inView: aboutInView } = useInView({threshold: 0.3});
+  const { ref: courseRef, inView: courseInView } = useInView({threshold: 0.3});
+  const { ref: projectRef, inView: projectInView } = useInView({threshold: 0.3});
 
   return (
     <div className='Main'>

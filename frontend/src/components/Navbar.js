@@ -22,7 +22,7 @@ const RootLayout = () =>
           <Divider
             orientation='vertical'
             flexItem
-            sx={{backgroundColor:"white", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
+            sx={{backgroundColor:"red", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
           />
           <NavLink className={'nav-link'} to="about">
             <PersonIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
@@ -31,7 +31,7 @@ const RootLayout = () =>
           <Divider
             orientation='vertical'
             flexItem
-            sx={{backgroundColor:"white", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
+            sx={{backgroundColor:"red", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
           />
           <NavLink className={'nav-link'} to="course">
             <SchoolIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
@@ -40,7 +40,7 @@ const RootLayout = () =>
           <Divider
             orientation='vertical'
             flexItem
-            sx={{backgroundColor:"white", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
+            sx={{backgroundColor:"red", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
           />
           <NavLink className={'nav-link'} to="project">
             <LightbulbIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>

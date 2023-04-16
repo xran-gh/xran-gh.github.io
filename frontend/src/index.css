@@ -158,6 +158,34 @@ header nav a.active
   font-size: calc(6vw + 6vh);
   font-family: TechnoBoard;
   color: red;
+  animation: glow 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes glow
+{
+  0%
+  {
+    text-shadow:
+    0 0 4px black,
+    0 0 11px black,
+    0 0 20px darkred,
+    0 0 40px darkred,
+    0 0 60px darkred;
+  }
+
+  100%
+  {
+    text-shadow:
+    0 0 4px black,
+    0 0 11px black,
+    0 0 20px darkred,
+    0 0 40px darkred,
+    0 0 60px darkred,
+    0 0 80px darkred,
+    0 0 100px darkred,
+    0 0 120px darkred,
+    0 0 140px darkred;
+  }
 }
 
 .Main .content .center .subtitle

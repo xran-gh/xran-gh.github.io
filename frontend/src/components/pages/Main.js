@@ -6,17 +6,24 @@ import Button from "@mui/material/Button";
 import PersonIcon from '@mui/icons-material/Person'
 import SchoolIcon from '@mui/icons-material/School'
 import LightbulbIcon from '@mui/icons-material/Lightbulb'
+import { useInView } from 'react-intersection-observer';
 
 const Main = () =>
 {
+  const { ref: titleRef, inView: titleInView } = useInView({threshold: 1});
+  const { ref: subtitleRef, inView: subtitleInView } = useInView({threshold: 1});
+  const { ref: aboutRef, inView: aboutInView } = useInView({threshold: 0.2});
+  const { ref: courseRef, inView: courseInView } = useInView({threshold: 0.2});
+  const { ref: projectRef, inView: projectInView } = useInView({threshold: 0.2});
+
   return (
     <div className='Main'>
       <div className="content">
         <video src={video} autoPlay loop muted playsInline/>
         <div className='center'>
-          <div className="title">Hello 你好, I'm</div>
-          <div className="name">Ran Xu</div>
-          <div className="subtitle">Software Engineer</div>
+          <div ref={titleRef} className={`${'title'} ${titleInView ? 'animateTitle' : 'OutOfView'}`}>Hello 你好, I'm</div>
+          <div className={`${'name'}`}>Ran Xu</div>
+          <div ref={subtitleRef} className={`${'subtitle'} ${subtitleInView ? 'animateSubtitle' : 'OutOfView'}`}>Software Engineer</div>
         </div>
         <div className='expand'>
           <Link to="AboutCard" smooth={true} duration={1000}>
@@ -26,7 +33,7 @@ const Main = () =>
           </Link>
         </div>
       </div>
-      <div className='AboutCard'>
+      <div ref={aboutRef} className={`${'AboutCard'} ${aboutInView ? 'animateAbout' : 'OutOfView'}`}>
         <div className='top'>
           <PersonIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
           About Me
@@ -35,7 +42,7 @@ const Main = () =>
           section under work
         </div>
       </div>
-      <div className='CoursesCard'>
+      <div ref={courseRef} className={`${'CoursesCard'} ${courseInView ? 'animateCourse' : 'OutOfView'}`}>
         <div className='top'>
           <SchoolIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
           Programming Courses
@@ -44,7 +51,7 @@ const Main = () =>
           section under work
         </div>
       </div>
-      <div className='ProjectCard'>
+      <div ref={projectRef} className={`${'ProjectCard'} ${projectInView ? 'animateProject' : 'OutOfView'}`}>
         <div className='top'>
           <LightbulbIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
           Projects And Ideas

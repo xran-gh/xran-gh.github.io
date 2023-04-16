@@ -10,6 +10,21 @@
   src: url(./assets/TechnoBoard.ttf);
 }
 
+.OutOfView
+{
+  opacity: 0;
+}
+
+body::-webkit-scrollbar
+{
+  display: none;
+}
+
+html
+{
+  scrollbar-width: none;
+}
+
 /* ------------------------------------------------------------ navbar ------------------------------------------------------------ */
 header nav
 {
@@ -46,20 +61,24 @@ header nav a.active
   border-bottom: calc(0.15vw + 0.15vh) solid red;
 }
 
-.navNotInView
-{
-  opacity: 0;
-  transition: all 1s;
-}
-
-.navInView
-{
-  opacity: 1;
-}
-
 .animateNav
 {
-  animation-duration: 1s;
+  animation-duration: 1.5s;
+  animation-name: animate-nav;
+}
+
+@keyframes animate-nav
+{
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(0);
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 /* ------------------------------------------------------------ main page ------------------------------------------------------------ */
@@ -88,7 +107,7 @@ header nav a.active
 {
   position: fixed;
   z-index: -1;
-  filter: brightness(25%);
+  filter: brightness(15%);
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -113,6 +132,26 @@ header nav a.active
   font-size: calc(2vw + 1.5vh);
 }
 
+.animateTitle
+{
+  animation-duration: 3s;
+  animation-name: animate-title;
+}
+
+@keyframes animate-title
+{
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 .Main .content .center .name
 {
   font-size: calc(6vw + 6vh);
@@ -123,6 +162,26 @@ header nav a.active
 .Main .content .center .subtitle
 {
   font-size: calc(1.5vw + 1.5vh);
+}
+
+.animateSubtitle
+{
+  animation-duration: 3s;
+  animation-name: animate-subtitle;
+}
+
+@keyframes animate-subtitle
+{
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .Main .content .expand
@@ -142,6 +201,32 @@ header nav a.active
 {
   color: red;
   font-size: calc(3vw + 3vh);
+  animation-duration: 2s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
 }
 
 .Main .AboutCard
@@ -155,6 +240,26 @@ header nav a.active
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.animateAbout
+{
+  animation-duration: 1.5s;
+  animation-name: animate-about;
+}
+
+@keyframes animate-about
+{
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .Main .AboutCard .top
@@ -197,6 +302,26 @@ header nav a.active
   color: white;
 }
 
+.animateCourse
+{
+  animation-duration: 1.5s;
+  animation-name: animate-course;
+}
+
+@keyframes animate-course
+{
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(20%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 .Main .CoursesCard .top
 {
   overflow: hidden;
@@ -235,6 +360,26 @@ header nav a.active
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.animateProject
+{
+  animation-duration: 1.5s;
+  animation-name: animate-project;
+}
+
+@keyframes animate-project
+{
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .Main .ProjectCard .top

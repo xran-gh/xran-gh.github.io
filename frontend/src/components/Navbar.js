@@ -14,7 +14,7 @@ const RootLayout = () =>
   return (
     <div className='root-layout'>
       <header>
-        <nav ref={ref} className={inView ? 'navInView' : 'navNotInView'}>
+        <nav ref={ref} className={inView ? 'animateNav' : 'OutOfView'}>
           <NavLink className={'nav-link'} to="/">
             <HomeIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
             Home

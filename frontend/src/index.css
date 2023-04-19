@@ -5,70 +5,32 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* name font */
 @font-face {
   font-family: TechnoBoard;
   src: url(./assets/TechnoBoard.ttf);
 }
 
+/* hide element */
 .OutOfView
 {
   opacity: 0;
 }
 
+/* hide scrollbar for chrome, edge, safari */
 body::-webkit-scrollbar
 {
   display: none;
 }
 
+/* hide scrollbar for firefox */
 html
 {
   scrollbar-width: none;
 }
 
-/* ------------------------------------------------------------ navbar ------------------------------------------------------------ */
-header nav
-{
-  display: flex;
-  justify-content:space-around;
-  min-height: 6vh;
-}
-
-header nav hr
-{
-  z-index: 1;
-}
-
-header nav .nav-link
-{
-  display: flex;
-  align-items: center;
-  z-index: 1;
-}
-
-header nav .nav-link:hover
-{
-  color: red;
-}
-
-header nav a
-{
-  color: white;
-  text-decoration: none;
-  font-size: calc(1.5vw + 1.5vh);
-}
-
-header nav a.active
-{
-  border-bottom: calc(0.15vw + 0.15vh) solid red;
-}
-
-.animateNav
-{
-  animation-duration: 1.5s;
-  animation-name: animate-nav;
-}
-
-@keyframes animate-nav
+/* animations */
+@keyframes slide-down
 {
   from {
     transform: translateY(-100%);
@@ -82,64 +44,7 @@ header nav a.active
   }
 }
 
-/* ------------------------------------------------------------ main page ------------------------------------------------------------ */
-.Main
-{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-.Main .content
-{
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.Main .content video
-{
-  position: fixed;
-  z-index: -1;
-  filter: brightness(15%);
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.Main .content .center
-{
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.Main .content .center .title
-{
-  font-size: calc(2vw + 1.5vh);
-}
-
-.animateTitle
-{
-  animation-duration: 3s;
-  animation-name: animate-title;
-}
-
-@keyframes animate-title
+@keyframes slide-left
 {
   from {
     opacity: 0;
@@ -153,12 +58,46 @@ header nav a.active
   }
 }
 
-.Main .content .center .name
+@keyframes slide-left-small
 {
-  font-size: calc(6vw + 6vh);
-  font-family: TechnoBoard;
-  color: red;
-  animation: glow 1.5s ease-in-out infinite alternate-reverse;
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-20%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right
+{
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right-small
+{
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(20%);
+  }
+  to {
+    filter: blur(0);
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 @keyframes glow
@@ -180,54 +119,6 @@ header nav a.active
   }
 }
 
-.Main .content .center .subtitle
-{
-  font-size: calc(1.5vw + 1.5vh);
-}
-
-.animateSubtitle
-{
-  animation-duration: 3s;
-  animation-name: animate-subtitle;
-}
-
-@keyframes animate-subtitle
-{
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(100%);
-  }
-  to {
-    filter: blur(0);
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-
-.Main .content .expand
-{
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.Main .content .expand .icon
-{
-  color: red;
-  font-size: calc(3vw + 3vh);
-  animation-duration: 2s;
-  animation-name: bounce;
-  animation-iteration-count: infinite;
-  animation-delay: 3s;
-}
-
 @keyframes bounce {
   0%,
   20%,
@@ -246,16 +137,68 @@ header nav a.active
   }
 }
 
-.bounce {
-  animation-name: bounce;
+/* ------------------------------------------------------------ navbar ------------------------------------------------------------ */
+header nav
+{
+  display: flex;
+  justify-content:space-around;
+  min-height: 6vh;
+  width: 100%;
 }
 
-.Main .AboutCard
+/* move divider above background */
+header nav hr
+{
+  z-index: 1;
+}
+
+/* move links above background */
+header nav .nav-link
+{
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+/* change link red when hovered */
+header nav .nav-link:hover
+{
+  color: red;
+}
+
+header nav a
+{
+  color: white;
+  text-decoration: none;
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+/* add border for active link */
+header nav a.active
+{
+  border-bottom: calc(0.15vw + 0.15vh) solid red;
+}
+
+.animateNav
+{
+  animation-duration: 1.5s;
+  animation-name: slide-down;
+}
+
+/* ------------------------------------------------------------ main page ------------------------------------------------------------ */
+.Main
+{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Main .content
 {
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,46 +206,121 @@ header nav a.active
   color: white;
 }
 
+/* move backgound behind elements */
+.Main .content video
+{
+  position: fixed;
+  z-index: -1;
+  filter: brightness(15%);
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.Main .content .center
+{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.Main .content .center .title
+{
+  font-size: calc(2vw + 1.5vh);
+}
+
+.animateTitle
+{
+  animation-duration: 3s;
+  animation-name: slide-left;
+}
+
+.Main .content .center .name
+{
+  font-size: calc(6vw + 6vh);
+  font-family: TechnoBoard;
+  color: red;
+  animation: glow 1.5s ease-out infinite alternate-reverse;
+}
+
+.Main .content .center .subtitle
+{
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+.animateSubtitle
+{
+  animation-duration: 3s;
+  animation-name: slide-right;
+}
+
+.Main .content .expand
+{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Main .content .expand .icon
+{
+  color: red;
+  font-size: calc(3vw + 5vh);
+  animation-duration: 2s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+.Main .AboutCard
+{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+}
+
 .animateAbout
 {
   animation-duration: 1.5s;
-  animation-name: animate-about;
-}
-
-@keyframes animate-about
-{
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-20%);
-  }
-  to {
-    filter: blur(0);
-    transform: translateX(0%);
-    opacity: 1;
-  }
+  animation-name: slide-left-small;
 }
 
 .Main .AboutCard .top
 {
   overflow: hidden;
-  width: 90%;
-  height: 10%;
-  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   color: red;
   align-items: center;
   font-size: calc(2vw + 1vh);
+  border-bottom: calc(0.2vw + 0.1vh) solid red;
+  border-right: calc(0.2vw + 0.1vh) solid red;
+  padding-bottom: calc(0.4vw + 0.2vh);
+  padding-right: calc(0.4vw + 0.2vh);
+  margin-left: 5vw;
 }
 
 .Main .AboutCard .center
 {
+  margin-left: 5vw;
   overflow: hidden;
-  width: 90%;
-  height: 100%;
-  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -314,55 +332,41 @@ header nav a.active
 {
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   color: white;
 }
 
 .animateCourse
 {
   animation-duration: 1.5s;
-  animation-name: animate-course;
-}
-
-@keyframes animate-course
-{
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(20%);
-  }
-  to {
-    filter: blur(0);
-    transform: translateX(0%);
-    opacity: 1;
-  }
+  animation-name: slide-right-small;
 }
 
 .Main .CoursesCard .top
 {
   overflow: hidden;
-  width: 90%;
-  height: 10%;
-  top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   color: red;
   align-items: center;
   font-size: calc(2vw + 1vh);
+  border-bottom: calc(0.2vw + 0.1vh) solid red;
+  border-left: calc(0.2vw + 0.1vh) solid red;
+  padding-bottom: calc(0.4vw + 0.2vh);
+  padding-left: calc(0.4vw + 0.2vh);
+  margin-right: 5vw;
 }
 
 .Main .CoursesCard .center
 {
+  margin-right: 5vw;
   overflow: hidden;
-  width: 90%;
-  height: 100%;
-  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -374,55 +378,41 @@ header nav a.active
 {
   overflow: hidden;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: white;
 }
 
 .animateProject
 {
   animation-duration: 1.5s;
-  animation-name: animate-project;
-}
-
-@keyframes animate-project
-{
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-20%);
-  }
-  to {
-    filter: blur(0);
-    transform: translateX(0%);
-    opacity: 1;
-  }
+  animation-name: slide-left-small;
 }
 
 .Main .ProjectCard .top
 {
   overflow: hidden;
-  width: 90%;
-  height: 10%;
-  top: 0;
   display: flex;
-  color: red;
   flex-direction: row;
   justify-content: flex-start;
+  color: red;
   align-items: center;
   font-size: calc(2vw + 1vh);
+  border-bottom: calc(0.2vw + 0.1vh) solid red;
+  border-right: calc(0.2vw + 0.1vh) solid red;
+  padding-bottom: calc(0.4vw + 0.2vh);
+  padding-right: calc(0.4vw + 0.2vh);
+  margin-left: 5vw;
 }
 
 .Main .ProjectCard .center
 {
+  margin-left: 5vw;
   overflow: hidden;
-  width: 90%;
-  height: 100%;
-  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

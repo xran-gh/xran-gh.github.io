@@ -282,6 +282,25 @@ header nav a.active
   animation-delay: 3s;
 }
 
+.mainBtn
+{
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  color: red;
+  background-color: black;
+  border: 10px solid red;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.mainBtn:hover
+{
+  transform: translateY(-10px);
+  background-color: darkred;
+  color: white;
+}
+
 .Main .AboutCard
 {
   overflow: hidden;

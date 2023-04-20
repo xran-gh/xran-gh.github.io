@@ -7,6 +7,7 @@ import PersonIcon from '@mui/icons-material/Person'
 import SchoolIcon from '@mui/icons-material/School'
 import LightbulbIcon from '@mui/icons-material/Lightbulb'
 import { useInView } from 'react-intersection-observer';
+import { Link as DomLink} from 'react-router-dom';
 
 const Main = () =>
 {
@@ -39,7 +40,9 @@ const Main = () =>
           About Me
         </div>
         <div className='center'>
-          section under work
+          <DomLink to="/about">
+            <button className='mainBtn'>Learn More</button>
+          </DomLink>
         </div>
       </div>
       <div ref={courseRef} className={`${'CoursesCard'} ${courseInView ? 'animateCourse' : 'OutOfView'}`}>
@@ -48,7 +51,7 @@ const Main = () =>
           Programming Courses
         </div>
         <div className='center'>
-          section under work
+          <button className='mainBtn'>Learn More</button>
         </div>
       </div>
       <div ref={projectRef} className={`${'ProjectCard'} ${projectInView ? 'animateProject' : 'OutOfView'}`}>
@@ -57,7 +60,7 @@ const Main = () =>
           Projects And Ideas
         </div>
         <div className='center'>
-          section under work
+          <button className='mainBtn'>Learn More</button>
         </div>
       </div>
     </div>

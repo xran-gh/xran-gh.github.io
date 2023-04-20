@@ -26,12 +26,6 @@ const About = () =>
       <div className='AboutBody'>
         About My Journey So Far
       </div>
-      <div className='CoursesCard'>
-        Programming Course Summary And Homework
-      </div>
-      <div className='ProjectCard'>
-        Current Projects And Future Ideas
-      </div>
     </div>
   )
 }

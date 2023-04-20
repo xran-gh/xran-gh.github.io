@@ -181,7 +181,7 @@ header nav a.active
 
 .animateNav
 {
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-name: slide-down;
 }
 
@@ -318,13 +318,13 @@ header nav a.active
 
 .Main .AboutCard .center
 {
-  margin-left: 5vw;
+  width: 100%;
   overflow: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   font-size: calc(1.5vw + 1.5vh);
 }
 
@@ -364,13 +364,13 @@ header nav a.active
 
 .Main .CoursesCard .center
 {
-  margin-right: 5vw;
+  width: 100%;
   overflow: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   font-size: calc(1.5vw + 1.5vh);
 }
 
@@ -410,13 +410,13 @@ header nav a.active
 
 .Main .ProjectCard .center
 {
-  margin-left: 5vw;
+  width: 100%;
   overflow: hidden;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   font-size: calc(1.5vw + 1.5vh);
 }
 

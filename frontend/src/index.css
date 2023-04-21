@@ -288,7 +288,6 @@ header nav a.active
   font-weight: 700;
   padding: 1.5vh 1.5vw;
   color: red;
-  border-color: red;
   background-color: black;
   border: calc(0.2vw + 0.2vh) solid red;
   border-radius: calc(0.1vw + 0.1vh);

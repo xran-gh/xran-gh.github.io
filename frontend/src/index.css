@@ -284,19 +284,19 @@ header nav a.active
 
 .mainBtn
 {
-  font-size: 2rem;
+  font-size: calc(1vw + 1vh);
   font-weight: 700;
-  padding: 0.5em 1em;
+  padding: 1.5vh 1.5vw;
   color: red;
+  border-color: red;
   background-color: black;
-  border: 10px solid red;
-  border-radius: 5px;
+  border: calc(0.2vw + 0.2vh) solid red;
+  border-radius: calc(0.1vw + 0.1vh);
   transition: all 0.3s;
 }
 
 .mainBtn:hover
 {
-  transform: translateY(-10px);
   background-color: darkred;
   color: white;
 }

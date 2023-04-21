@@ -41,7 +41,7 @@ const Main = () =>
         </div>
         <div className='center'>
           <DomLink to="/about">
-            <button className='mainBtn'>Learn More</button>
+            <button className='mainBtn' onClick={()=>{window.scroll(0, 0)}}>Learn More</button>
           </DomLink>
         </div>
       </div>
@@ -51,7 +51,9 @@ const Main = () =>
           Programming Courses
         </div>
         <div className='center'>
-          <button className='mainBtn'>Learn More</button>
+          <DomLink to="/course">
+            <button className='mainBtn' onClick={()=>{window.scroll(0, 0)}}>Learn More</button>
+          </DomLink>
         </div>
       </div>
       <div ref={projectRef} className={`${'ProjectCard'} ${projectInView ? 'animateProject' : 'OutOfView'}`}>
@@ -60,7 +62,9 @@ const Main = () =>
           Projects And Ideas
         </div>
         <div className='center'>
-          <button className='mainBtn'>Learn More</button>
+          <DomLink to="/project">
+            <button className='mainBtn' onClick={()=>{window.scroll(0, 0)}}>Learn More</button>
+          </DomLink>
         </div>
       </div>
     </div>

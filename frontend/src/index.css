@@ -329,6 +329,7 @@ header nav a.active
   font-size: calc(2vw + 1vh);
   border-bottom: calc(0.2vw + 0.1vh) solid red;
   border-right: calc(0.2vw + 0.1vh) solid red;
+  border-radius: calc(0.1vw + 0.1vh);
   padding-bottom: calc(0.4vw + 0.2vh);
   padding-right: calc(0.4vw + 0.2vh);
   margin-left: 5vw;
@@ -375,6 +376,7 @@ header nav a.active
   font-size: calc(2vw + 1vh);
   border-bottom: calc(0.2vw + 0.1vh) solid red;
   border-left: calc(0.2vw + 0.1vh) solid red;
+  border-radius: calc(0.1vw + 0.1vh);
   padding-bottom: calc(0.4vw + 0.2vh);
   padding-left: calc(0.4vw + 0.2vh);
   margin-right: 5vw;
@@ -421,6 +423,7 @@ header nav a.active
   font-size: calc(2vw + 1vh);
   border-bottom: calc(0.2vw + 0.1vh) solid red;
   border-right: calc(0.2vw + 0.1vh) solid red;
+  border-radius: calc(0.1vw + 0.1vh);
   padding-bottom: calc(0.4vw + 0.2vh);
   padding-right: calc(0.4vw + 0.2vh);
   margin-left: 5vw;

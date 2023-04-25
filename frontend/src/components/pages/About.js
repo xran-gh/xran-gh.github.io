@@ -3,16 +3,11 @@ import video from '../../assets/aboutbackground.mov'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import {Link} from 'react-scroll';
 import Button from "@mui/material/Button";
-import { motion } from 'framer-motion';
 
 const About = () =>
 {
   return (
-    <motion.div className='About'
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      transition={{duration: 0.75, ease: "easeOut"}}
-    >
+    <div className='About'>
       <div className="content">
         <video src={video} autoPlay loop muted playsInline/>
         <div className='center'>
@@ -31,7 +26,7 @@ const About = () =>
       <div className='AboutBody'>
         About My Journey So Far
       </div>
-    </motion.div>
+    </div>
   )
 }
 

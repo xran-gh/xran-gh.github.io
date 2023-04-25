@@ -1,4 +1,4 @@
-import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 
 // Navbar
 import Navbar from './components/Navbar';
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
   )
 )
 
-function App()
+const App = () =>
 {
   return (
     <RouterProvider router={router}/>

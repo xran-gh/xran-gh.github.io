@@ -8,7 +8,6 @@ import SchoolIcon from '@mui/icons-material/School'
 import LightbulbIcon from '@mui/icons-material/Lightbulb'
 import { useInView } from 'react-intersection-observer';
 import { Link as DomLink} from 'react-router-dom';
-import { motion } from'framer-motion';
 
 const Main = () =>
 {
@@ -19,11 +18,7 @@ const Main = () =>
   const { ref: projectRef, inView: projectInView } = useInView({threshold: 0.2});
 
   return (
-    <motion.div className='Main'
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      transition={{duration: 0.75, ease: "easeOut"}}
-    >
+    <div className='Main'>
       <div className="content">
         <video src={video} autoPlay loop muted playsInline/>
         <div className='center'>
@@ -72,7 +67,7 @@ const Main = () =>
           </DomLink>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

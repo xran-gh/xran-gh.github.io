@@ -40,6 +40,14 @@ const Main = () =>
           About Me
         </div>
         <div className='center'>
+          <div className='aboutContent'>
+            <p>
+              From
+            </p>
+            <div className='imageList'>
+              pictures
+            </div>
+          </div>
           <DomLink to="/about">
             <button className='mainBtn' onClick={()=>{window.scroll(0, 0)}}>Learn More</button>
           </DomLink>

@@ -42,7 +42,7 @@ const Main = () =>
         <div className='center'>
           <div className='aboutContent'>
             <p>
-              From
+              From software developer to gamer, athletics to arcademics, Chinese to English
             </p>
             <div className='imageList'>
               pictures

@@ -5,7 +5,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* name font */
+/* techno font */
 @font-face {
   font-family: TechnoBoard;
   src: url(./assets/TechnoBoard.ttf);
@@ -146,12 +146,6 @@ header nav
   width: 100%;
 }
 
-/* move divider above background */
-header nav hr
-{
-  z-index: 1;
-}
-
 /* move links above background */
 header nav .nav-link
 {
@@ -190,8 +184,6 @@ header nav a.active
 {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .Main .content

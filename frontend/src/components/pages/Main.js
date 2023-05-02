@@ -43,7 +43,7 @@ const Main = () =>
           <div className='aboutContent'>
             <p>
               From software developer to gamer, athletics to arcademics, Chinese to English, come discover
-              what interests and experiences shape the way I am
+              what interests and experiences build my skill set and expertise
             </p>
             <div className='imageList'>
               pictures

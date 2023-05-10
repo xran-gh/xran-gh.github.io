@@ -331,6 +331,11 @@ header nav a.active
   font-size: calc(1.5vw + 1.5vh);
 }
 
+.Main .AboutCard .center .aboutContent
+{
+  /**/
+}
+
 .Main .CoursesCard
 {
   overflow: hidden;

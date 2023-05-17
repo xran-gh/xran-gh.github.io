@@ -326,7 +326,7 @@ header nav a.active
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: calc(1.5vw + 1.5vh);
 }
@@ -334,6 +334,18 @@ header nav a.active
 .Main .AboutCard .center .aboutContent
 {
   display: flex;
+  margin-inline: 10vw;
+  justify-content: space-between;
+}
+
+.Main .AboutCard .center .aboutContent p
+{
+  width: 40%;
+}
+
+.Main .AboutCard .center .aboutContent .imageList
+{
+  width: 55%;
 }
 
 .Main .CoursesCard

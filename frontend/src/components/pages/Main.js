@@ -1,5 +1,5 @@
 import React from 'react'
-import video from '../../assets/mainbg.mp4'
+import video from '../../assets/mainbackground.mp4'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Link } from 'react-scroll';
 import Button from "@mui/material/Button";

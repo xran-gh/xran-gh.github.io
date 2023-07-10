@@ -3,8 +3,7 @@ import { NavLink, Outlet} from 'react-router-dom'
 import Divider from '@mui/material/Divider';
 import HomeIcon from '@mui/icons-material/Home'
 import PersonIcon from '@mui/icons-material/Person'
-import SchoolIcon from '@mui/icons-material/School'
-import LightbulbIcon from '@mui/icons-material/Lightbulb'
+import DescriptionIcon from '@mui/icons-material/Description'
 import { useInView } from 'react-intersection-observer';
 
 const RootLayout = () =>
@@ -24,27 +23,18 @@ const RootLayout = () =>
             flexItem
             sx={{backgroundColor:"red", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
           />
-          <NavLink className={'nav-link'} to="about">
+          <NavLink className={'nav-link'} to="resume">
+            <DescriptionIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
+            Resume
+          </NavLink>
+          <Divider
+            orientation='vertical'
+            flexItem
+            sx={{backgroundColor:"red", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
+          />
+          <NavLink className={'nav-link'} to="contact">
             <PersonIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
-            About
-          </NavLink>
-          <Divider
-            orientation='vertical'
-            flexItem
-            sx={{backgroundColor:"red", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
-          />
-          <NavLink className={'nav-link'} to="course">
-            <SchoolIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
-            Courses
-          </NavLink>
-          <Divider
-            orientation='vertical'
-            flexItem
-            sx={{backgroundColor:"red", borderRightWidth: "calc(0.1vw + 0.1vh)"}}
-          />
-          <NavLink className={'nav-link'} to="project">
-            <LightbulbIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
-            Projects
+            Contact
           </NavLink>
         </nav>
       </header>

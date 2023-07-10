@@ -1,13 +1,13 @@
 import React from 'react'
-import video from '../../assets/aboutbackground.mp4'
+import video from '../../assets/resumebackground.mp4'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import {Link} from 'react-scroll';
 import Button from "@mui/material/Button";
 
-const About = () =>
+const Resume = () =>
 {
   return (
-    <div className='About'>
+    <div className='Resume'>
       <div className="content">
         <video src={video} autoPlay loop muted playsInline/>
         <div className='center'>
@@ -30,4 +30,4 @@ const About = () =>
   )
 }
 
-export default About
+export default Resume

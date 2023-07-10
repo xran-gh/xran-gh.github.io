@@ -141,7 +141,7 @@ html
 header nav
 {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-evenly;
   min-height: 6vh;
   width: 100%;
 }
@@ -442,8 +442,8 @@ header nav a.active
   font-size: calc(1.5vw + 1.5vh);
 }
 
-/* ------------------------------------------------------------ about page ------------------------------------------------------------ */
-.About
+/* ------------------------------------------------------------ resume page ------------------------------------------------------------ */
+.Resume
 {
   position: absolute;
   top: 0;
@@ -451,7 +451,7 @@ header nav a.active
   height: 100vh;
 }
 
-.About .content
+.Resume .content
 {
   overflow: hidden;
   width: 100%;
@@ -464,7 +464,7 @@ header nav a.active
   color: white;
 }
 
-.About .content video
+.Resume .content video
 {
   position: fixed;
   z-index: -1;
@@ -474,7 +474,7 @@ header nav a.active
   object-fit: cover;
 }
 
-.About .content .center
+.Resume .content .center
 {
   overflow: hidden;
   position: absolute;
@@ -488,24 +488,24 @@ header nav a.active
   color: white;
 }
 
-.About .content .center .title
+.Resume .content .center .title
 {
   font-size: calc(2vw + 1.5vh);
 }
 
-.About .content .center .name
+.Resume .content .center .name
 {
   font-size: calc(6vw + 6vh);
   font-family: TechnoBoard;
   color: red;
 }
 
-.About .content .center .subtitle
+.Resume .content .center .subtitle
 {
   font-size: calc(1.5vw + 1.5vh);
 }
 
-.About .content .expand
+.Resume .content .expand
 {
   overflow: hidden;
   position: absolute;
@@ -518,39 +518,13 @@ header nav a.active
   align-items: center;
 }
 
-.About .content .expand .icon
+.Resume .content .expand .icon
 {
   color: red;
   font-size: calc(3vw + 3vh);
 }
 
-.About .AboutBody
-{
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.About .CoursesCard
-{
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.About .ProjectCard
+.Resume .AboutBody
 {
   overflow: hidden;
   width: 100%;

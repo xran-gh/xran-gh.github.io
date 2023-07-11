@@ -460,7 +460,6 @@ header nav a.active
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  color: white;
 }
 
 .Resume .content video
@@ -475,7 +474,11 @@ header nav a.active
 
 .Resume .content .center
 {
-  height: 90vh;
+  height: 90%;
+  width: 100%;
+  object-fit: scale-down;
+  justify-content: center;
+  display: flex;
 }
 
 /* ------------------------------------------------------------ contact page ------------------------------------------------------------ */

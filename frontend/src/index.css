@@ -459,19 +459,15 @@ header nav a.active
 {
   position: absolute;
   top: 0;
-  width: 100%;
   height: 100vh;
 }
 
 .Resume .content
 {
-  width: 100%;
   height: 100%;
-  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .Resume .content video
@@ -488,8 +484,6 @@ header nav a.active
 {
   height: 90%;
   width: 100vw;
-  display: flex;
-  justify-content: center;
 }
 
 .Resume .content .center img
@@ -543,20 +537,11 @@ header nav a.active
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
 }
 
 .NotFound .content
 {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  top: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
 }
 
 .NotFound .content video
@@ -571,10 +556,8 @@ header nav a.active
 .NotFound .content .center
 {
   position: absolute;
-  overflow: hidden;
   width: 100%;
   height: 100%;
-  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -592,6 +575,7 @@ header nav a.active
   font-size: calc(6vw + 6vh);
   font-family: TechnoBoard;
   color: red;
+  animation: glow 1.5s ease-out infinite alternate-reverse;
 }
 
 .NotFound .content .center .subtitle

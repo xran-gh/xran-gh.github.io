@@ -531,6 +531,12 @@ header nav a.active
   object-fit: cover;
 }
 
+.Contact .content .center .icon
+{
+  font-size:  calc(6vw + 6vh);
+  color: red;
+}
+
 /* ------------------------------------------------------------ error page ------------------------------------------------------------ */
 .NotFound
 {

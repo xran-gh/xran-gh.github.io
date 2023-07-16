@@ -533,7 +533,12 @@ header nav a.active
 
 .Contact .content .center .icon
 {
-  font-size:  calc(6vw + 6vh);
+  font-size:  calc(6vw + 2vh);
+  color: white;
+}
+
+.Contact .content .center .icon:hover
+{
   color: red;
 }
 

@@ -17,9 +17,11 @@ const Contact = () =>
       <div className="content">
         <video src={video} autoPlay loop muted playsInline/>
         <div className='center'>
+
           <Button className='mailButton' onClick={() => setOpenMail(true)}>
             <MailIcon className='icon'/>
           </Button>
+
           <Dialog open={openMail} onClose={() => setOpenMail(false)}>
             <DialogTitle>Email Address</DialogTitle>
             <DialogContent>
@@ -29,27 +31,33 @@ const Contact = () =>
               <Button onClick={() => setOpenMail(false)}>Close</Button>
             </DialogActions>
           </Dialog>
+
           <Button className='phoneButton' onClick={() => setOpenPhone(true)}>
             <PhoneIcon className='icon'/>
           </Button>
+
           <Dialog open={openPhone} onClose={() => setOpenPhone(false)}>
             <DialogTitle>Phone Number</DialogTitle>
             <DialogContent>
-              <DialogContentText>(561) 755-1172</DialogContentText>
+              <DialogContentText sx={"color:red; font-size: calc(1.5vw + 1.5vh);"}>(561) 755-1172</DialogContentText>
             </DialogContent>
             <DialogActions>
               <Button onClick={() => setOpenPhone(false)}>Close</Button>
             </DialogActions>
           </Dialog>
+
           <Button className='linkedinButton' href='https://www.linkedin.com/in/ranxu-cs/' target='_blank' rel="noreferrer">
             <LinkedInIcon className='icon'/>
           </Button>
+
           <Button className='githubButton' href='https://github.com/xran-gh' target='_blank' rel="noreferrer">
             <GitHubIcon className='icon'/>
           </Button>
+
           <Button className='instagramButton' href='https://www.instagram.com/xran.ig/' target='_blank' rel="noreferrer">
             <InstagramIcon className='icon'/>
           </Button>
+
         </div>
       </div>
     </div>

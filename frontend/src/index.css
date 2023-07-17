@@ -647,12 +647,12 @@ header nav a.active
 .Contact .content .center .icon
 {
   font-size:  calc(6vw + 2vh);
-  color: white;
+  color: red;
 }
 
 .Contact .content .center .icon:hover
 {
-  color: red;
+  color: white;
 }
 
 .mailButton

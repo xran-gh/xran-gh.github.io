@@ -36,7 +36,15 @@ const Contact = () =>
             <PhoneIcon className='icon'/>
           </Button>
 
-          <Dialog open={openPhone} onClose={() => setOpenPhone(false)}>
+          <Dialog
+            open={openPhone}
+            onClose={() => setOpenPhone(false)}
+            PaperProps={{
+              style: {
+                backgroundColor: 'grey'
+              },
+            }}
+          >
             <DialogTitle>Phone Number</DialogTitle>
             <DialogContent>
               <DialogContentText sx={"color:red; font-size: calc(1.5vw + 1.5vh);"}>(561) 755-1172</DialogContentText>

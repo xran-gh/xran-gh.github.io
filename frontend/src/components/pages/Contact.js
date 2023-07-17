@@ -17,7 +17,7 @@ const Contact = () =>
       <div className="content">
         <video src={video} autoPlay loop muted playsInline/>
         <div className='center'>
-          <Button onClick={() => setOpenMail(true)}>
+          <Button className='mailButton' onClick={() => setOpenMail(true)}>
             <MailIcon className='icon'/>
           </Button>
           <Dialog open={openMail} onClose={() => setOpenMail(false)}>
@@ -29,7 +29,7 @@ const Contact = () =>
               <Button onClick={() => setOpenMail(false)}>Close</Button>
             </DialogActions>
           </Dialog>
-          <Button onClick={() => setOpenPhone(true)}>
+          <Button className='phoneButton' onClick={() => setOpenPhone(true)}>
             <PhoneIcon className='icon'/>
           </Button>
           <Dialog open={openPhone} onClose={() => setOpenPhone(false)}>
@@ -41,13 +41,13 @@ const Contact = () =>
               <Button onClick={() => setOpenPhone(false)}>Close</Button>
             </DialogActions>
           </Dialog>
-          <Button href='https://www.linkedin.com/in/ranxu-cs/' target='_blank' rel="noreferrer">
+          <Button className='linkedinButton' href='https://www.linkedin.com/in/ranxu-cs/' target='_blank' rel="noreferrer">
             <LinkedInIcon className='icon'/>
           </Button>
-          <Button href='https://github.com/xran-gh' target='_blank' rel="noreferrer">
+          <Button className='githubButton' href='https://github.com/xran-gh' target='_blank' rel="noreferrer">
             <GitHubIcon className='icon'/>
           </Button>
-          <Button href='https://www.instagram.com/xran.ig/' target='_blank' rel="noreferrer">
+          <Button className='instagramButton' href='https://www.instagram.com/xran.ig/' target='_blank' rel="noreferrer">
             <InstagramIcon className='icon'/>
           </Button>
         </div>

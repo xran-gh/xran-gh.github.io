@@ -35,7 +35,7 @@ const Contact = () =>
           >
             <DialogTitle sx={"color:white; font-size: calc(1.5vw + 1.5vh);"}>Email Address</DialogTitle>
             <DialogContent>
-              <DialogContentText sx={"color:red; font-size: calc(3vw + 3vh);"}>xran@mail.com</DialogContentText>
+              <DialogContentText sx={"color:red; font-size: calc(2.5vw + 2.5vh);"}>xran@mail.com</DialogContentText>
             </DialogContent>
             <DialogActions sx={"justify-content: center"}>
               <Button
@@ -63,7 +63,7 @@ const Contact = () =>
           >
             <DialogTitle sx={"color:white; font-size: calc(1.5vw + 1.5vh);"}>Phone Number</DialogTitle>
             <DialogContent>
-              <DialogContentText sx={"color:red; font-size: calc(3vw + 3vh);"}>(561) 755-1172</DialogContentText>
+              <DialogContentText sx={"color:red; font-size: calc(2.5vw + 2.5vh);"}>(561) 755-1172</DialogContentText>
             </DialogContent>
             <DialogActions sx={"justify-content: center"}>
               <Button

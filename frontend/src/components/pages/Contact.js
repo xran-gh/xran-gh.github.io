@@ -22,10 +22,18 @@ const Contact = () =>
             <MailIcon className='icon'/>
           </Button>
 
-          <Dialog open={openMail} onClose={() => setOpenMail(false)}>
-            <DialogTitle>Email Address</DialogTitle>
+          <Dialog
+            open={openMail}
+            onClose={() => setOpenMail(false)}
+            PaperProps={{
+              style: {
+                backgroundColor: 'black'
+              },
+            }}
+          >
+            <DialogTitle sx={"color:white; font-size: calc(1vw + 1vh);"}>Email Address</DialogTitle>
             <DialogContent>
-              <DialogContentText>xran@mail.com</DialogContentText>
+              <DialogContentText sx={"color:red; font-size: calc(1.5vw + 1.5vh);"}>xran@mail.com</DialogContentText>
             </DialogContent>
             <DialogActions>
               <Button onClick={() => setOpenMail(false)}>Close</Button>
@@ -41,11 +49,11 @@ const Contact = () =>
             onClose={() => setOpenPhone(false)}
             PaperProps={{
               style: {
-                backgroundColor: 'grey'
+                backgroundColor: 'black'
               },
             }}
           >
-            <DialogTitle>Phone Number</DialogTitle>
+            <DialogTitle sx={"color:white; font-size: calc(1vw + 1vh);"}>Phone Number</DialogTitle>
             <DialogContent>
               <DialogContentText sx={"color:red; font-size: calc(1.5vw + 1.5vh);"}>(561) 755-1172</DialogContentText>
             </DialogContent>

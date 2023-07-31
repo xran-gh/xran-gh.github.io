@@ -399,7 +399,7 @@ header nav a.active
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: white;
 }
 
@@ -411,19 +411,13 @@ header nav a.active
 
 .Main .AboutCard .top
 {
-  overflow: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   color: red;
   align-items: center;
-  font-size: calc(2vw + 1vh);
-  border-bottom: calc(0.2vw + 0.1vh) solid red;
-  border-right: calc(0.2vw + 0.1vh) solid red;
-  border-radius: calc(0.1vw + 0.1vh);
-  padding-bottom: calc(0.4vw + 0.2vh);
-  padding-right: calc(0.4vw + 0.2vh);
-  margin-left: 5vw;
+  font-size: calc(5vw + 3vh);
+  font-weight: 600;
 }
 
 .Main .AboutCard .center
@@ -447,12 +441,12 @@ header nav a.active
 
 .Main .AboutCard .center .aboutContent p
 {
-  width: 40%;
+  width: 50%;
 }
 
 .Main .AboutCard .center .aboutContent .imageList
 {
-  width: 55%;
+  width: 45%;
 }
 
 /* ------------------------------------------------------------ resume page ------------------------------------------------------------ */

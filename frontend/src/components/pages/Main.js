@@ -3,7 +3,6 @@ import video from '../../assets/mainbackground.mp4'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Link } from 'react-scroll';
 import Button from "@mui/material/Button";
-import PersonIcon from '@mui/icons-material/Person'
 import { useInView } from 'react-intersection-observer';
 
 const Main = () =>
@@ -33,18 +32,17 @@ const Main = () =>
 
       <div ref={aboutRef} className={`${'AboutCard'} ${aboutInView ? 'animateAbout' : 'OutOfView'}`}>
         <div className='top'>
-          <PersonIcon fontSize='inherit' sx={{paddingRight: "0.2vw"}}/>
-          About Me
+          Who is this guy
         </div>
         <div className='center'>
           <div className='aboutContent'>
+            <div className='imageList'>
+              pictures
+            </div>
             <p>
               From software developer to gamer, athletics to arcademics, Chinese to English, come discover
               what interests and experiences build my skill set and expertise
             </p>
-            <div className='imageList'>
-              pictures
-            </div>
           </div>
         </div>
       </div>

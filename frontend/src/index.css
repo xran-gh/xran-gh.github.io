@@ -434,17 +434,20 @@ header nav a.active
 
 .Main .AboutCard .center .aboutContent
 {
+  height: 80%;
   display: flex;
   margin-inline: 10vw;
   justify-content: space-between;
-}
-
-.Main .AboutCard .center .aboutContent p
-{
-  width: 50%;
+  align-items: center;
 }
 
 .Main .AboutCard .center .aboutContent .imageList
+{
+  width: 50%;
+  height: 100%;
+}
+
+.Main .AboutCard .center .aboutContent p
 {
   width: 45%;
 }

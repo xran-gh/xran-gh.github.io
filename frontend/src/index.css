@@ -429,7 +429,7 @@ header nav a.active
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font-size: calc(1.5vw + 1.5vh);
+  font-size: calc(1vw + 1vh);
 }
 
 .Main .AboutCard .center .aboutContent

@@ -39,9 +39,7 @@ const ImageSlider = ({slides}) =>
 
   return (
     <div style={sliderStyles}>
-      <div style={slideStyles}>
-        
-      </div>
+      <div style={slideStyles}/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import video from '../../assets/resumebackground.mp4'
-import picture from  '../../assets/resume.png'
+import picture from  '../../assets/resume.jpg'
 import { useInView } from 'react-intersection-observer';
 
 const Resume = () =>

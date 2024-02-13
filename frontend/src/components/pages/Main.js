@@ -10,11 +10,13 @@ import self2 from "../../assets/self2.jpg";
 import self3 from "../../assets/self3.jpg";
 import self4 from "../../assets/self4.jpg";
 import self5 from "../../assets/self5.jpg";
+import codeImg from "../../assets/code.jpg";
 
 const Main = () =>
 {
   const { ref: titleRef, inView: titleInView } = useInView({threshold: 0.9});
   const { ref: subtitleRef, inView: subtitleInView } = useInView({threshold: 0.9});
+  const { ref: codeRef, inView: codeInView } = useInView({threshold: 0.2});
   const { ref: aboutRef, inView: aboutInView } = useInView({threshold: 0.2});
 
   const slides = [
@@ -36,11 +38,27 @@ const Main = () =>
           <div ref={subtitleRef} className={`${'subtitle'} ${subtitleInView ? 'animateSubtitle' : 'OutOfView'}`}>Software Engineer</div>
         </div>
         <div className='expand'>
-          <Link to="AboutCard" smooth={true} duration={1000}>
+          <Link to="CodeCard" smooth={true} duration={1000}>
             <Button disableRipple style={{backgroundColor:'transparent'}}>
               <ExpandMoreIcon className='icon' />
             </Button>
           </Link>
+        </div>
+      </div>
+
+      <div ref={codeRef} className={`${'CodeCard'} ${codeInView ? 'animateCode' : 'OutOfView'}`}>
+        <div className='top'>
+          Check out the code
+        </div>
+        <div className='center'>
+          <div className='codeContent'>
+            <p>
+              The code for this website is open source! Come check it out on my Github repository
+            </p>
+            <div className='codeImage'>
+              <img src={codeImg} alt='codeImage'/>
+            </div>
+          </div>
         </div>
       </div>
 

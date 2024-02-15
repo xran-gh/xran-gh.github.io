@@ -52,13 +52,17 @@ const Main = () =>
         </div>
         <div className='center'>
           <div className='aboutContent'>
-            <div className='imageList'>
-              <ImageSlider slides={slides}/>
+            <div className='column1'>
+              /
             </div>
-            <p>
-              From software developer to gamer, athletics to arcademics, Chinese to English, come discover
-              what interests and experiences build my skill set and expertise
-            </p>
+            <div className='column2'>
+              <div className='row1'>
+                <ImageSlider slides={slides}/>
+              </div>
+            </div>
+            <div className='column3'>
+              /
+            </div>
           </div>
         </div>
       </div>

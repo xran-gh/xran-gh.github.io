@@ -3,6 +3,7 @@
 {
   margin: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px solid white;
 }
 
 /* techno font */
@@ -430,29 +431,55 @@ header nav a.active
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   font-size: calc(1vw + 1vh);
 }
 
 .Main .AboutCard .center .aboutContent
 {
-  height: 80%;
+  height: 90%;
+  width: 100%;
   display: flex;
-  margin-inline: 10vw;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.Main .AboutCard .center .aboutContent .imageList
+.Main .AboutCard .center .aboutContent .column1
 {
-  width: 50%;
+  width: 30%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.Main .AboutCard .center .aboutContent p
+.Main .AboutCard .center .aboutContent .column2
 {
-  width: 45%;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Main .AboutCard .center .aboutContent .column2 .row1
+{
+  height: 75%;
+  width: 100%;
+}
+
+.Main .AboutCard .center .aboutContent .column3
+{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------------------------------ code card ------------------------------ */

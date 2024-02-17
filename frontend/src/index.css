@@ -641,27 +641,27 @@ header nav a.active
 
 .mailButton
 {
-  animation: hiding 0.5s forwards, slide-down 2s 0.5s forwards, bounce 1.25s 2.5s infinite;
+  animation: hiding 0.5s forwards, slide-left 2s 0.5s forwards, bounce 1.25s 2.5s infinite;
 }
 
 .phoneButton
 {
-  animation: hiding 1.5s forwards, slide-up 2s 1.5s forwards, shaking 1.5s 3.5s infinite ease-in-out;
+  animation: hiding 1.5s forwards, slide-left 2s 1.5s forwards, shaking 1.5s 3.5s infinite ease-in-out;
 }
 
 .linkedinButton
 {
-  animation: hiding 2.5s forwards, slide-down 2s 2.5s forwards, fliping 3.5s 4.5s infinite ease-in-out;
+  animation: hiding 2.5s forwards, slide-left 2s 2.5s forwards, fliping 3.5s 4.5s infinite ease-in-out;
 }
 
 .githubButton
 {
-  animation: hiding 3.5s forwards, slide-up 2s 3.5s forwards, spin 4s 5.5s infinite ease-in-out;
+  animation: hiding 3.5s forwards, slide-left 2s 3.5s forwards, spin 4s 5.5s infinite ease-in-out;
 }
 
 .instagramButton
 {
-  animation: hiding 4.5s forwards, slide-down 2s 4.5s forwards, beat 4.5s 6.5s infinite ease-in-out;
+  animation: hiding 4.5s forwards, slide-left 2s 4.5s forwards, beat 4.5s 6.5s infinite ease-in-out;
 }
 
 /* ------------------------------------------------------------ error page ------------------------------------------------------------ */
